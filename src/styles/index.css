@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
+
+/*  css variable light mode */
+:root {
+  --bg:           #e8f3fb;
+  --surface:      #ffffff;
+  --surface2:     #eef6fd;
+  --surface3:     #daedf8;
+  --text:         #1a2a44;
+  --text2:        #5a7a9a;
+  --text3:        #8aaac8;
+  --accent:       #1a7fd4;
+  --accent2:      #0f5fa0;
+  --accent-light: #cde5f8;
+  --range:        #d0e8f8;
+  --today:        #e05a20;
+  --weekend:      #c04820;
+  --note-amber:   #f0c040;
+  --note-bg:      #fffbec;
+  --border:       #c0d8ec;
+  --border2:      #a8c8e0;
+  --shadow:       0 4px 24px rgba(20,70,140,0.10);
+  --shadow-sm:    0 2px 8px rgba(20,70,140,0.07);
+  --radius:       16px;
+  --radius-sm:    8px;
+  --trans:        all 0.28s cubic-bezier(.4,0,.2,1);
+
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+}
+
+/* dark mode*/
+body.dark {
+  --bg:           #0c0c1a;
+  --surface:      #131326;
+  --surface2:     #1a1a32;
+  --surface3:     #22223e;
+  --text:         #e4deff;
+  --text2:        #9090c0;
+  --text3:        #6060a0;
+  --accent:       #a07ef5;
+  --accent2:      #c4b0ff;
+  --accent-light: #2a2050;
+  --range:        #221e48;
+  --today:        #ff8c5a;
+  --weekend:      #cc88ff;
+  --note-amber:   #7060c0;
+  --note-bg:      #1a1830;
+  --border:       #2a2860;
+  --border2:      #3a3878;
+  --shadow:       0 4px 32px rgba(80,40,200,0.18);
+  --shadow-sm:    0 2px 10px rgba(80,40,200,0.12);
+}
+
+/*reset*/
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.32s ease, color 0.32s ease;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+textarea, input {
+  font-family: var(--font-body);
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+}
