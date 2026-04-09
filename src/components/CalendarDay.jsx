@@ -1,5 +1,5 @@
 import React from 'react';
-import { isToday, isWeekend, isSameDay, isInRange, dateKey } from '../utils/dateUtils';
+import { isToday, isWeekend, isSameDay, isInRange } from '../utils/dateUtils';
 import '../styles/CalendarGrid.css';
 
 export default function CalendarDay({ dayObj, selStart, selEnd, effectiveEnd, hasNote, onClick, onMouseEnter }) {
